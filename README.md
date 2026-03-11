@@ -25,36 +25,27 @@ This project introduces an **AI-driven civic complaint pipeline** that automatic
 
 ---
 
-# 🏗 System Architecture
+## 🏗 System Architecture
 
+The system processes citizen complaints through an AI-powered pipeline.
 
-Citizen Phone Call
-│
-▼
-Twilio Voice Gateway
-│
-▼
-FastAPI Call Server
-│
-▼
-AI Processing Pipeline
-│
+```mermaid
+flowchart LR
 
-┌───────────────┬───────────────┬───────────────┐
-│ LLM Agent │ Analytics │ Routing Agent │
-│ (Issue Detect)│ (Priority) │ (Department) │
-└───────────────┴───────────────┴───────────────┘
+A[📞 Citizen Phone Call]
+--> B[📡 Twilio Voice Gateway]
+--> C[⚡ FastAPI Call Server]
+--> D[🧠 AI Processing Pipeline]
 
-    │  
-    ▼  
+D --> E[LLM Agent<br>Issue Detection]
+D --> F[Analytics Agent<br>Priority Detection]
+D --> G[Routing Agent<br>Department Assignment]
 
-SQLite Complaint Database
-│
-▼
-Streamlit Civic Command Dashboard
+E --> H[(SQLite Complaint Database)]
+F --> H
+G --> H
 
-
----
+H --> I[📊 Streamlit Civic Command Dashboard]
 
 # ⚙ AI Processing Pipeline
 
