@@ -27,7 +27,7 @@ This project introduces an **AI-driven civic complaint pipeline** that automatic
 
 ## 🏗 System Architecture
 
-The system processes citizen complaints through an AI-powered pipeline.
+The system processes citizen complaints through an AI-powered pipeline that receives calls, analyzes complaints using AI agents, prioritizes incidents, and routes them to the appropriate government department.
 
 ```mermaid
 flowchart LR
@@ -46,30 +46,6 @@ F --> H
 G --> H
 
 H --> I[📊 Streamlit Civic Command Dashboard]
-
-# ⚙ AI Processing Pipeline
-
-
-Complaint Received
-↓
-LLM Analysis Agent
-↓
-Issue + Location Extraction
-↓
-Analytics Agent
-↓
-Priority Detection
-↓
-Routing Agent
-↓
-Department Assignment
-↓
-Complaint Stored in Database
-↓
-Dashboard Update
-
-
----
 
 # ✨ Key Features
 
