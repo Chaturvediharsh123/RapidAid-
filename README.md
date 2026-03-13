@@ -1,6 +1,6 @@
-# 🚨 AI Civic Command Center
+# 🚨 RAPIDAID
 
-AI-powered civic complaint intelligence platform that allows citizens to report issues, automatically analyzes complaints using AI agents, prioritizes emergencies, and routes them to the appropriate government department.
+Rapidaid is a civic complaint intelligence platform that allows citizens to report issues, automatically analyzes complaints using AI agents, prioritizes emergencies, and routes them to the appropriate government department.
 
 ---
 
@@ -8,7 +8,6 @@ AI-powered civic complaint intelligence platform that allows citizens to report 
 
 Below is the command center dashboard used to register complaints and monitor civic issues.
 
-![AI Civic Command Center UI](ui.png)
 
 The dashboard allows users to:
 
@@ -72,7 +71,7 @@ Pandas | Data analytics |
 # 📂 Project Structure
 
 
-ai-civic-command-center
+RAPIDAID
 │
 ├ main.py # Complaint processing pipeline
 ├ call_server.py # Twilio call handler
